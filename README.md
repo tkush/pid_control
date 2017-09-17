@@ -21,13 +21,16 @@ The integral of the CTE is simply the sum of all previous and current CTEs. The 
 The P part of the controller serves to adjust the "responsiveness" of the controller to minimize the perceived error. That is, a higher value of P will make the controller calculate a steer angle that serves to minimize the CTE *faster*. However, increasing P too much will make the controller react faster but at the cost of overshooting the 0 CTE mark thereby making the system oscillate about the 0 CTE reference. 
 
 ![one](/images/one.gif)
-P = 0.2475
+
+**P = 0.2475**
 
 ![two](/images/two.gif)
-P = 1.0
+
+**P = 1.0**
 
 ![three](/images/three.gif)
-P = 1.5
+
+**P = 1.5**
 
 **Integral co-efficient**
 The I part of the controller serves to correct for error that add up over time. Since the proportional response can never really achieve a zero error response, the integral part is reponsible for keeping a tally of the errors that add up over time and correct for those. This is often called "bias correction" which basically means that the proportional control is indifferent to a bias in the error and the integral part tries to correct for that. 
