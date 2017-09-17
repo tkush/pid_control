@@ -43,7 +43,7 @@ The Twiddle algorithm is basically a local hill climber method. Pseudo code for 
 6. If the error has increased, reset the parameter (P/I/D) to the value in (1). Decrease the delta by a small amount. This means that we may have taken a very large step and the stepsize needs to be decreased. Goto 2. 
 
 ## Final parameters obtained after tuning
-After an intial guess of PID = (0.2375, 0., 0.), the Twiddle algorithm is applied over 20 iterations for this simulator. Each iteration makes the car drive for about 1.5 laps. The final tuned values are **()**.
+After an intial guess of PID = (0.2375, 0., 0.), the Twiddle algorithm is applied over 20 iterations for this simulator. Each iteration makes the car drive for about 1.5 laps. The final tuned values are **(0.2475, 1e-4, 8.9e-5)**.
 
 Comments in the code are provided to aid in readability. 
 
