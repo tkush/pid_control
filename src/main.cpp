@@ -34,7 +34,7 @@ int main()
 
   // Start with initial guess and fine tune controller
   // for 20 iterations
-  PID pid(20, 0);
+  PID pid(20, 1);
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
