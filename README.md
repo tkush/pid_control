@@ -5,12 +5,12 @@ Additionally, a simple PID tuning algorithm - called a "Twiddle" algorithm is im
 ## Cross track error
 The "cross track error" or CTE is the signed distance between the center of the track and the center of the vehicle. This is a measure computed by the simulator and passed to the controller code at each step. 
 
-[!cte](/images/cte.png)
+![cte](/images/cte.png)
 
 ## PID controller
 The PID controller is a standard Proportional, Integral and Derivate Controller defined as follows:
 
-[!controller](/images/controller.png)
+![controller](/images/controller.png)
 
 The integral of the CTE is simply the sum of all previous and current CTEs. The derivative, likewise, is the difference between the current and last CTE. 
 
